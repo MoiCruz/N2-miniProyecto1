@@ -4,17 +4,17 @@ import React, { useState, useEffect } from 'react';
 
 export function CardImage() {
 
-  const [categorys, setCategorys] = useState(true)
+  const [categories, setCategories] = useState(false)
 
   useEffect(() => {
-    fetch('/public/stay.json')
+    fetch('/stay.json')
       .then((answer) => answer.json())
-      .then((data) => setCategorys(data))
+      .then((categories) => setCategories(categories))
       .catch((error) => console.error(error));
   }, []);
 
 
-  const { city, country, superHost, title, rating, type, photo } = categorys
+  const { city, country, superHost, title, rating, type, photo } = categories
 
   return (
     <div className="">
