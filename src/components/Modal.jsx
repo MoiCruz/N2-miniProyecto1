@@ -9,7 +9,7 @@ export function Modal({ closeModal }) {
     };
     return (
         <>
-      
+
 
             <div className="modal-overlay flex w-full items-center" onClick={outsideClick}>
 
@@ -35,12 +35,10 @@ export function Modal({ closeModal }) {
                         <img src="../public/icons/search2.png" alt="search" className="size-5 md:size-5 m-1" />
                     </button>
                 </div>
-            
 
-
-
-            <Buttons />
+               
             </div>
+            <Buttons />
 
 
         </>
