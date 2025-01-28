@@ -10,6 +10,8 @@ export function Buttons() {
 
         const moreChilds = (()=> setChilds(childs+1));
         const lessChilds = (()=> setChilds(childs > 0? childs -1:0));
+
+        
     
     return (
 
